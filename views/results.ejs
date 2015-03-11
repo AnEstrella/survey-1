@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<h1>Submitted Information:</h1>
+  	<% if(session_data.sessionID)
+  		{ %>
+  		<p><%= "Name: " + session_data.name %></p>
+  		<p><%= "Location: " + session_data.location %></p>
+  		<p><%= "Language: " + session_data.language %></p>
+  		<p><%= "Comment: " + session_data.comment %></p>
+
+  		<% } %>
+  	<button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back()
+}
+</script>
+  </body>
+</html>

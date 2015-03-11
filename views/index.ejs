@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form action ="/result" method="post">
+	    <p>Your Name: <input type="text" name="name"></p>
+	    <p>Dojo Location:
+		    <select name="location">
+		    	<option value="Mountain View">Mountain View</option>
+		    	<option value="Seattle">Seattle</option>
+		    	<option value="SoCal">SoCal</option>
+		    </select>
+		</p>
+		<p>Favorite Language:
+		    <select name="language">
+		    	<option value="JavaScript">JavaScript</option>
+		    	<option value="PHP">PHP</option>
+		    	<option value="Ruby">Ruby</option>
+		    </select>
+		</p>
+		<p>Comment (optional): <textarea name="comment"></textarea></p>
+		<input type="Submit" value="submit">
+	</form>
+  </body>
+</html>
